@@ -11,8 +11,8 @@ from requests.exceptions import RequestException
 
 # Asynchronous Function to send a message to Telegram
 async def send_telegram_message(message):
-    token = '7810923532:AAFiAXtlhvw7NjcJgWAUESMGctVrs9mHoT4'
-    chat_id = 1814948590
+    token = 'yourtoken'
+    chat_id ="enter your chat id"
     url = f'https://api.telegram.org/bot{token}/sendMessage'
     params = {
         'chat_id': chat_id,
