@@ -11,7 +11,6 @@ def register(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
-            # Send Slack message
             send_slack_message(f"New user registered: {user.username}")
             return redirect('login')
     else:
