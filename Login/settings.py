@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
+import os
 
+SLACK_WEBHOOK_URL = os.getenv('SLACK_WEBHOOK_URL', 'https://hooks.slack.com/services/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')
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
